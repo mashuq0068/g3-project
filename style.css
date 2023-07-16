@@ -76,7 +76,7 @@ main{
     flex-direction: row-reverse;
     padding-top:10vh;
     padding-bottom:10vh;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
 }
 .team-picture-container{
@@ -87,6 +87,62 @@ main{
     
   
 }
+.light-gray{
+    color: #727272;
+    font-weight: 500;
+}
+.orange{
+    color: #FF900E;
+}
+.cards-first{
+    display: flex;
+    flex-direction: column;   
+    gap:30%;
+   
+}
+.cards{
+    
+    margin-top:5%;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding:5%;
+}
+.cards-first-picture img{
+   margin-top:10%;
+   width:90%;
+   
+   margin-left:10%;
+}
+
+.cards-first-text p{
+    margin-top:10px;
+}
+.btn-large{
+    
+    color: #FFF;
+
+   font-size:4rem;
+
+  font-weight: 500;
+  padding:46px 42px 45px 42px;
+  background-color: #FF900E;
+  border-radius:5px;
+  margin-top:-10%;
+  border: none;
+  
+
+}
+.experience{
+font-size:1.5rem;
+font-weight: 400;
+color: #FFF;
+}
+
+
+
+
+
 
 @media screen and (max-width:576px){
    nav{
@@ -104,6 +160,21 @@ margin-right: auto;
    }
    .team-container{
     flex-direction: column-reverse;
+   }
+   .cards-first{
+    
+   }
+   .btn-large{
+    width:max-content;
+    font-size: medium;
+    padding:5%;
+    font-size:0.8rem;
+    font-weight: 700;
+    
+   
+   }
+   .experience{
+    font-size: 0.8rem;
    }
   
 
