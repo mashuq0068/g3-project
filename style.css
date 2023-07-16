@@ -1,0 +1,136 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+    header{
+        background: rgba(255, 144, 14, 0.10);
+        padding:3vw 10vw 3vw 10vw;
+
+    }
+*{ margin:0px;
+   padding:0px;
+   font-family: 'Lato', sans-serif;
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Work Sans', sans-serif;
+   color: #131313;
+}
+img{
+  width:100%;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-medium{
+  font-size:2.8rem;
+  font-weight: 700;
+}
+nav li{
+  list-style: none;
+  margin:2vw;
+  font-weight: 400;
+}
+nav > ul{
+  display: flex;
+
+}
+a{
+  text-decoration: none;
+}
+.banner-container{
+  margin-top:5vw;
+  text-align: center;
+  
+}
+.btn-primary{
+  background-color:#FF900E;
+  color: #FFF;
+  font-size:1.3rem;
+  font-weight: 600;
+  border-radius:3px;
+  border: none;
+  padding:10px;
+  margin-top:33px;
+  margin-bottom:33px;
+  cursor:pointer;
+}
+.banner-description{
+  margin-top:33px;
+}
+.title{
+  font-size:4rem;
+  font-weight: 700;
+}
+.description{
+  font-size:1rem;
+  font-weight: 400;
+  margin-top:33px;
+}
+main{
+    max-width:80vw;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.team-container{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top:10vh;
+    padding-bottom:10vh;
+    justify-content: center;
+    align-items: center;
+}
+.team-picture-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    margin-right:10vh;
+    
+  
+}
+
+@media screen and (max-width:576px){
+   nav{
+    flex-direction: column-reverse;
+    padding:7%;
+   } 
+   .title-medium{
+    font-size:2.3rem;
+   margin-top:30px;
+   }
+  .team-picture-container{
+grid-template-columns: repeat(1,1fr);
+margin-left: auto;
+margin-right: auto;
+   }
+   .team-container{
+    flex-direction: column-reverse;
+   }
+  
+
+}
+@media screen and (max-width:960px) and (min-width:577px){
+    nav{
+        flex-direction: column-reverse;
+        padding:7%;
+       } 
+       .title-medium{
+        font-size:2.3rem;
+       margin-top:30px;
+       }
+      .team-picture-container{
+    grid-template-columns: repeat(2,1fr);
+    margin-left: auto;
+    margin-right: auto;
+       }
+       .team-container{
+        flex-direction: column-reverse;
+       }
+       .team-text-container{
+        
+        text-align: center;
+       }
+      
+      
+      
+    
+}
